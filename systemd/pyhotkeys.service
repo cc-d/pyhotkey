@@ -1,0 +1,12 @@
+[Unit]
+Description=Hotkey Listener Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/udesk/pyhotkeys/src/pyhotkeys.py
+User=udesk
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
