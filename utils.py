@@ -7,7 +7,7 @@ from typing import List, Dict, Any, Optional, Union, Tuple, Set
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 COMBOS_PATH = os.path.join(BASE_DIR, "combos.json")
 
-def load_combos(file_path: str = COMBOS_PATH) -> Dict[str, str]:
+def read_combos(file_path: str = COMBOS_PATH) -> Dict[str, str]:
     """
     Load the combos from a JSON file.
 

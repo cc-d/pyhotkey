@@ -3,7 +3,7 @@ import os
 import unittest
 import sys
 
-from utils import load_combos, write_combos
+from utils import read_combos, write_combos
 
 class TestUtils(unittest.TestCase):
 
@@ -21,7 +21,7 @@ class TestUtils(unittest.TestCase):
 
     def test_load_combos(self):
         """Test if load_combos correctly loads data."""
-        loaded_data = load_combos(file_path=self.test_path)
+        loaded_data = read_combos(file_path=self.test_path)
         self.assertEqual(loaded_data, self.test_data)
 
     def test_write_combos(self):

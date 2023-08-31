@@ -20,6 +20,11 @@ To activate the PyHotkey hotkey combination listener, use:
 pyhotkey
 ```
 
+### Virtual Env
+
+Run `. ./use-venv.sh` to switch to python3.11 using python and activate/create the virtual environment.
+
+
 ## Features
 
 - Activate and deactivate the hotkey combination listener using a PyHotkey modifier key.
